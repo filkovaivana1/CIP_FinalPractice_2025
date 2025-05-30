@@ -1,0 +1,6 @@
+2025-03-17T08:15:32.522+01:00  INFO 19196 --- [main] com.example.Class7ApplicationTests       : Starting Class7ApplicationTests using Java 17.0.12 with PID 19196 (started by ivana.filkova in C:\Users\ivana.filkova.KIMTECMK\IdeaProjects\Ivana_Filkova_0001\Java_2\Lecture7_SpringBeans\Exercise1_Logger_Demo1)
+2025-03-17T08:15:32.530+01:00  INFO 19196 --- [main] com.example.Class7ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T08:15:33.017+01:00  INFO 19196 --- [main] com.example.logs.DebugLogs               : This is info log
+2025-03-17T08:15:33.252+01:00  INFO 19196 --- [main] com.example.Class7ApplicationTests       : Started Class7ApplicationTests in 1.111 seconds (process running for 2.473)
+2025-03-17T08:15:33.257+01:00  INFO 19196 --- [main] com.example.FirstBean                    : log something
+2025-03-17T08:15:33.270+01:00  WARN 19196 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.example.Class7ApplicationTests@4af70944]
