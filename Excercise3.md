@@ -102,15 +102,20 @@
 **Objective:** Demonstrate unnderstanding and practical use of Java Sream API, incliding the operations map(), filter(), sorted(), collect(), forEach(), anuMatch() and allMatch(). Work with lists, sets and lambda expressions  to transform and process data.
 
 **Task Description::** Task 1 (Mapping a List of Integers): For a given list of integers calculate square of each list elementFollow to-do steps for the subtasks
+
 **Task Description::** Task 2 (Converting Strings to Uppercase): For a given list of strings convert each string to uppercase
+
 **Task Description::** Task 3 (Filtering Strings Based on a Condition): For a given list of strings select the elements with starting letter "S"
+
 **Task Description::** Task 4 (Sorting a List of Strings): For a given list of names, sort the same list of names in alphabetical order
+
 **Task Description::** Task 5 (Mapping to a Set): Map initial integer list to a new set where each element is doubled
+
 **Task Description::** Task 6 (Using forEach()): For a given integer list print each element using forEach()
+
 **Task Description::** Task 7 (Using allMatch()): Check if all the elements in integer list are greater than a given value
+
 **Task Description::** Task 8 (Using anyMatch()): Check if any element in given integer list is smaller than a given value
-): For a given list of strings convert each string to uppercase
-**Task Description::** Task 9: For a given list of strings convert each string to uppercase
 
 
 **To-Do:**
