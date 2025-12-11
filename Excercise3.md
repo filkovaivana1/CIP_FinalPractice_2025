@@ -73,8 +73,6 @@
 
 
 ### Assignment 9: *Filtering Entries From a HashMap using Java Streams*
-**Objective:** Introduce methods with arrays and loops.
-
 **Task Description::** Write a Java program that for a given hashMap select the entries with value "Orange"
 
 **To-Do:**
