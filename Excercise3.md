@@ -34,7 +34,7 @@
 
 **To-Do:**
 - Create a list of strings
-- Using Stream API process the list by first converting the list into stream
+- Process the list by first converting the list into stream
 - Apply a filter to select only the strings that are not null
 - Collect the filtered results into a new list
 - Print each string from the filtered list
