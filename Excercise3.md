@@ -139,23 +139,42 @@
 - Boolean results from allMatch() and anyMatch()
 
 
+### Assignment 11: *Advanced Java Stream API Opearations Objective*
+**Objective:** Practicing advanced operations of the Java Stream API, including filtering, counting, mapping, collecting, joining, generating statistics, creating random numbers, and working with parallel streams. You will apply functional-style programming concepts to process collections of strings and integers.
 
-//////
-11. Assignment: Advanced Java Stream API Opearations Objective - This assignment focuses on practicing advanced operations of the Java Stream API, including filtering, counting, mapping, collecting, joining, generating statistics, creating random numbers, and working with parallel streams. You will apply functional-style programming concepts to process collections of strings and integers.
+**Task Description:** Task 1 (Working With Streams of Strings): For given list of strings, count the number of empty strings, count number of strings of length three, and merge non-empty strings into a single string.
 
-Part 1: Working With Streams of Strings 1. Display initial list - Print the initial list of strings 2. Count Empty Strings - Use stream().filter() to: 1. Count how many strings in the list are empty 2. Print the result 3. Count Strings of Length Three - Use a filter to count strings whose length is exactly 3, then print the count 4. Filter Out Empty Strings - Create a new list containing only non-empty strings
+**Task Description:** Task 2 (Working With Integer Streams): For a given integer list create a distinct square list
 
-Collect this into a list and print it 5. Merge Non-Empty Strings Into a Single String - Filter out empty strings - Merge remaining strings into one string separated by commas using: Collectors.joining(", ") - Print the merged result
-Part 2: Working With Integer Streams 6. Create a Distinct Square List - Map each integer to its square using map(i -> i * i) - Apply distinct() to remove duplicate values - Collect the squares into a list
+**Task Description:** Task 3 (Statistical Operations): Using Stream API, for a given list of integers calculate maximum, minimum, sum and average value of all elements.
 
-Print the resulting list
-Part 3: Statistical Operations 7. Print Summary Statistics - Using "integers.stream().mapToInt( x -> x).summaryStatistics()" extract and print individually with descriptive labels: 1. Maximum value 2. Minimum value 3. Sum 4. Average
+**Task Description:** Task 4 (Generating Random Numbers): Using Java Streams generate and print 10 sorted random integers
 
-Part 4: Generating Random Numbers 8. Generate Sorted Random Integers - Using "random.ints().limit(10).sorted()" print ten random sorted integers to the console
+**Task Description:** Task 5 (Using Parallel Streams): Using parallelStreams() for a given string list count empty strings
 
-Part 5: Using Parallel Streams 9. Count Empty Strings Using parallelStreams() - Using "strings.parallelStream()" print the count prefixed with an appropriate label such as "Empty str:"
+**Task Description:** Task 6 (forEach()): For a given integer list print each element using forEach()
 
-Expected Output Highlights Your program should display: 1. Number of empty strings 2. Number of strings with length 3 3. List of non-empty strings 4. A merged string of non-empty values 5. A list of distinct squared integers 6. Statistical results (max, min, sum, average) 7. Ten sorted random integers 8. Empty string count using parallel processing
+**Task Description:** Task 7 (allMatch()): Check if all the elements in integer list are greater than a given value
+
+**Task Description:** Task 8 (anyMatch()): Check if any element in given integer list is smaller than a given value
+
+
+**To-Do:**
+- Task 1: Create initial list of strings. Then: count empty strings, count how many strings in the list are empty, count strings of length three and print the count results. After that, merge non-empty strings into a single string by first filtering out empty strings, and then merge remaining strings into one string separated by commas using: Collectors.joining(", "), and then finally print the merged result.
+- Task 2: Create initial integer list, then map each integer to its square using map(i -> i * i). After that apply distinct() to remove duplicate values, and collect the squares into a list. Print the result list. 
+- Task 3: Using "integers.stream().mapToInt( x -> x).summaryStatistics()" extract and print individually with descriptive labels the following sumary statistics: 1. Maximum value 2. Minimum value 3. Sum 4. Average 
+- Task 4: Generate 10 sorted random integers by using "random.ints().limit(10).sorted()" and print ten random sorted integers to the console
+- Task 5: Using "strings.parallelStream()" print the  number of empty strings prefixed with an appropriate label
+
+
+**Expected Output Highlights:** Your program should display:
+- Number of empty strings
+- Number of strings with length 3
+- A merged string of non-empty values
+- A list of distinct squared integers
+- Statistical results (max, min, sum, average)
+- Ten sorted random integers
+- Empty string count using parallel processing
 
 /////////////////////////////
 
