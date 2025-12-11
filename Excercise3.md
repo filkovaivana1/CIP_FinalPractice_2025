@@ -10,7 +10,6 @@
 - Print the result list containing the squared values.
   
 ### Assignment 2: *Filtering a List of Names Using Java Stream*
-**Objective:** Use arrays to store numbers and process them using loops.
 
 **Task Description:** Using Java Streams write a Java program that from a given name list selects only the names with length greater than 6.
 
@@ -23,22 +22,13 @@
 
 **Expected Output:** The program should display only the names that have more than 6 characters.
   
-### Assignment 3: *Similar like 2.....*
-**Objective:** Use arrays to store numbers and process them using loops.
+### Assignment 3: *Filtering a List of Names Using Java Stream*
 
-**Task Description:** You are in charge of managing a vault that stores secret numbers. These numbers hold the key to opening the vault, and you need to process them correctly to retrieve the vault’s treasure.
+**Task Description:** Using Java Streams write a Java program that from a given name list selects only the names with length between 6 and 8.
 
-**To-Do:**
-- Create a list of names
-- Using Stream API process by converting the list into stream
-- Apply a filter to select only the names whose length is greater than 6 characters
-- Collect the filtered results into a new list
-- Print each name from the filtered list
-
-**Expected Output:** The program should display only the names that have more than 6 characters.
+**Expected Output:** The program should display only the names that have more than 6 and less than 8 characters.
 
 ### Assignment 4: *Filtering a List of Names Using Java Streams*
-**Objective:** Work with `for`, `while`, and `do-while` loops, and `break` and `continue` statements.
 
 **Task Description:** From a given list of strings filter only those that are not null and display the result.
 
