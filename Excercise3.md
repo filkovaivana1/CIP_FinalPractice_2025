@@ -51,7 +51,7 @@
 - Add the following key-value pairs to the HashMap: - 11 -> "Apple" - 22 -> "Orange" - 33 -> "Kiwi" - 44 -> "Banana". 
 - Convert the entrySet() of the HashMap into a stream
 - Filter the entries to include only those where the key value is less than or equal to 22
-- Collect the filtered entries back into a new Map 4.
+- Collect the filtered entries back into a new Map.
 - Prints the resulting filtered map.
 
 **Expected Output:** The program should display the filtered map containing only the entries whose keys are less than or equal to 22.
