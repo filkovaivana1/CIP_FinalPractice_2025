@@ -99,8 +99,7 @@
 
 
 ### Assignment 10: *Mapping a List of Integers, Converting Strings to Uppercase, Filtering Strings Based on a Condition, Sorting a List of Strings, Mapping to a Set, using forEach(), allMatch(), anyMatch()*
-**Objective:** The purpose of this assignment is to demonstrate understanding and practical use of the Java Stream API, including the operations map(), filter(), sorted(), collect(), forEach(), anyMatch and AllMatch(). You will work with lists, sets and lambda expressions to transform and process data.
- - 
+**Objective:** Demonstrate unnderstanding and practical use of Java Sream API, incliding the operations map(), filter(), sorted(), collect(), forEach(), anuMatch() and allMatch(). Work with lists, sets and lambda expressions  to transform and process data.
 
 **Task Description::** Task 1 (Mapping a List of Integers): For a given list of integers calculate square of each list elementFollow to-do steps for the subtasks
 **Task Description::** Task 2 (Converting Strings to Uppercase): For a given list of strings convert each string to uppercase
