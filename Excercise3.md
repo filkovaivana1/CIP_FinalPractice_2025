@@ -15,7 +15,7 @@
 
 **To-Do:**
 - Create a list of names
-- Using Stream API process by converting the list into stream
+- Process by converting the list into stream
 - Apply a filter to select only the names whose length is greater than 6 characters
 - Collect the filtered results into a new list
 - Print each name from the filtered list
