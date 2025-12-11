@@ -215,8 +215,7 @@ Example output format: A B C Sansa Jon Arya
 
 **Objective:** Demonstrate the use of the Stream.iterate() method, along with filtering limiting and printing elements in a stream.
 
-**Task Description:** Create a Java program that performs We need to merge two separate streams into one using Stream.concat() method. Finally, we will iterate through the combined stream and print the elements
-You are required to create a Java program that generate 6 integers, starting from 1 by taking only numbers divisible by 3. 
+**Task Description:** You are required to create a Java program that generate 6 integers, starting from 1 by taking only numbers divisible by 3. 
 
 **To-Do:**
 - Using Stream.iterate(initialValue, unaryOperator) generate an infinite stream of integers, starting from 1, where each subsequent number increments by 1.
@@ -227,32 +226,84 @@ You are required to create a Java program that generate 6 integers, starting fro
 **Expected Output:** The program should print the first six numbers divisible by 3
 3 6 9 12 15 18
 
-### Assignment 16: *Using Java Streams to Generate a Sequence of Numbers*
+### Assignment 16: *Working with Predicates and Stream API in Java*
 
-**Objective:** Demonstrate the use of the Stream.iterate() method, along with filtering limiting and printing elements in a stream.
+**Objective:** This assignment focuses on using Java Streams, Predicates and the noneMatch() terminal operation to evaluate conditions on a collection of custom objects. You will learn how to define predicate conditions, and test them using Stream operations
 
-**Task Description:** Create a Java program that performs We need to merge two separate streams into one using Stream.concat() method. Finally, we will iterate through the combined stream and print the elements
-You are required to create a Java program that generate 6 integers, starting from 1 by taking only numbers divisible by 3. 
-
-**To-Do:**
-- Using Stream.iterate(initialValue, unaryOperator) generate an infinite stream of integers, starting from 1, where each subsequent number increments by 1.
-- Filter the stream so that only numbers divisible by 3 are included
-- Limit hte stream to the first 6 numbers that satisfy the condition
-- Print each number using forEach
-
-**Expected Output:** The program should print the first six numbers divisible by 3
-3 6 9 12 15 18
-
-
-
-### Assignment 7: *"The Game of Shadows"*
-**Objective:** Combine everything—arrays, loops, methods, and conditions—to create a more complex program.
-
-**Story:** The Game of Shadows is an ancient game played on a 3x3 grid. The game decides the fate of two players, 'X' and 'O'. You must create a program that simulates the game and determines the winner.
+**Task Description:** You are required to create a Java program that will process student information. Inside Main class create predicates to test Student properties by checking whether none of the sutdents have names with starting letter L, and whether none of the students are less than 28 and have names with the starting letter "P".  
 
 **To-Do:**
-- Create a method `generateMatrix(char[][] matrix)` that fills a 3x3 matrix with randomly placed 'X' and 'O' values.
-- Create a method `printMatrix(char[][] matrix)` to output the matrix.
-- Create a method `countLines(char[][] matrix, char symbol)` that counts how many rows, columns, and diagonals are filled with the given symbol.
-- Create a method `announceWinner(int countX, int countO)` that compares the counts and prints whether 'X' or 'O' wins, or if there is no winner.
-- In `main`, generate the matrix, print it, count the lines for 'X' and 'O', and announce the winner.
+- Define a Student class with fields: stuId(int), stuAde(int), stuName(String)
+- Inside Student class add constructor to initialize all fields, getter methods, and a static method getStudents() that returns a list of predefined Student objects (example student records: - (11, 28, "Lucy") - (28, 27, "Kiku") - (32, 30, "Dani") - (49, 27, "Steve"))
+- Inside Main claass create predicate p1 that checks whether the student's name starts with the letter "L"
+- Create predicate p2, that checks whether the student's age is less than 28, AND name starts with the letter "P".
+- Use Student.getStudents() and then apply the noneMatch() method with both predicatesUse to check whether none of the sutdents satisfy the given predicates (to check whether none of the sutdents have names with starting letter L, and whether none of the students are less than 28 and have names with the starting letter "P") 
+
+**Expected Output:** Format The output of your program should display the results of both tests. Example: list.stream().noneMatch(p1): false list.stream().noneMatch(p2): true
+
+
+### Assignment 17: *Java Streams and Predicates Manipulation*
+
+**Objective:** The purpose of this assignment is to help practice working with Java Streams API, Lambda expressions and predicates, filtering, matching and collecting stream results. 
+
+**Task Description:** You are required to implement a Java program that manages a list of students using the Java Stream API for filtering and matching operations using predicates and display results on the console.  We need to perform checks such as: whether all students are younger than 25, whether at least one student is older than 25, whether no student has a name starting with "A" (and on each check print the result)
+
+
+**To-Do:**
+- Create a Student class with fields: String name, int indexNo, int age. Add constructor to initialize all fields, and getter methods. 
+- Inside Main class Implement a static method for student creation -> createStudent(String name, int indexNo, int age) -> this method should return a new Student object
+- Inside Main class create a method printValues(Student s) that should display Student Details
+- Inside Main class create a method List<Student> getStudents() that will return a list containing at least five predefined Student objects
+- Inside Main, create list of example names and use Random to automatically generate students with random index numbers and ages, and than print all autogenerated students
+- Define following predicates: p1 (selects students whose name starts with "A"), p2 (selects students whose names starts with "S" and age is less than 28), p3 (selects students older than 25)
+- Then using Streams and the predefined predicates filter the students, and collect and print the filtered results
+
+**Expected Output:** Your program should display autogenerated students with their details, filtered results for predicate conditions (Boolean results from allMatch(), noneMatch() and anyMatch() checks)
+
+
+### Assignment 18: *Calculating Average Age of Students Using Java Streams*
+
+**Objective:** The purpose of this assignment is to demonstrate the use of the Stream API by creating a list of student objects and calculate the average age using Collectors. averagingInt() method
+
+**Task Description:** Write a Java program that defines a Student class with attributes id, name and age. Create a list of students, store multiple students in it and compute the average age of all students using Java Stream operations.
+
+**To-Do:**
+- Create Student Class with 3 fields: id (integer), name(String) and age(integer)
+- Include a constructor to initialize these fields
+- In main class, create an ArrayList<Student> to store student information
+- Add multiple student objects with different details
+- Use Stream API to calculate the average age
+- Print the calculated average age.
+
+### Assignment 19: *Counting the frequency of Names Using Java Streams *
+
+**Objective:** The purpose of this assignment is to demonstrate the use of Java Streams, Collectors and groupingBy() to count the frequency of repeated elements in a list
+
+**Task Description:** Write a Java program that takes a list of names and counts how many times each name appears. Use "Collectors.groupingBy()" and "Collectors.counting()" methods to generate a frequency map of the names.
+
+**To-Do:**
+- Create a list of names containing duplicates
+- Convert the list into a stream 
+- Use "groupingBy(Function.identity(), counting())" to group identical names together and count the occurences of each name
+- Store the result in a Map<String, Long>
+- Print the resulting map to display the frequency of each name
+
+**Expected Output:** The program should print a map showing how many times each name appears (E.g. {Jon=2, Ajeet=3, Steve=1})
+
+### Assignment 19: *Filtering Student Records and Storing Results in a Set Using Java Streams*
+
+**Objective:** The purpose of this assignment is ti demonstrate how to work with Stream API, focusing on filtering student records based on a condition and storing the filtered results in a Set using Collectors.toSet()
+
+**Task Description:** Using the same Student class definition from previous assignment write a Java program that stores student information in a list, filters students based on their ID value using Java Streams, and collects the filtered student inti a Set. Finally, iterate through the Set and print the each student's details
+
+**To-Do:**
+- Create Student Class with 3 fields: id (integer), name(String) and age(integer)
+- Include a constructor to initialize these fields
+- In Main Class create an ArrayList<Student> to hold multiple student records
+- Add several student objects to the list
+- Using Stream API Filter students whose ID is greater than 20 and collect the filtered results into a Set using Collectors.toSet()
+- Iterate over the Set and print each student's ID, name and age.
+
+
+**Expected Output:** The output will display only those students whose IDs are greater than 20
+
