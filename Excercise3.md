@@ -139,7 +139,7 @@
 - Boolean results from allMatch() and anyMatch()
 
 
-### Assignment 11: *Advanced Java Stream API Opearations Objective*
+### Assignment 11: *Advanced Java Stream API Opearations*
 **Objective:** Practicing advanced operations of the Java Stream API, including filtering, counting, mapping, collecting, joining, generating statistics, creating random numbers, and working with parallel streams. You will apply functional-style programming concepts to process collections of strings and integers.
 
 **Task Description:** Task 1 (Working With Streams of Strings): For given list of strings, count the number of empty strings, count number of strings of length three, and merge non-empty strings into a single string.
@@ -176,32 +176,73 @@
 - Ten sorted random integers
 - Empty string count using parallel processing
 
-/////////////////////////////
 
-12. Assignment: Working With Streams of Strings 1. Set initial list of names 2. Use a filter to count names with length less than 6, then print the count
+### Assignment 12: *Working With Streams of Strings*
 
-13. Rework the same exercise 12 using Java 7
+**Task Description:** For given list of names, count how many names have length less than 6 using Java Streams
 
-14. Assignment: Combining Streams in Java Objective The purpose of this assignment is to practice creating and manipulating streams in Java. We need to work with list of strings, convert them into streams, and merge two separate streams into one using Stream.concat() method. Finally, we will iterate through the combined stream and print the elements.
+**To-Do:**
+- Set initial list of names
+- Use a filter to count names with length less than 6
+- Print the count
 
-Tasks 1. Create List of Strings - Create a list named alphabets containing: "A", "B", "C" - Create another list named names containing: "Sansa", "Jon", "Arya" 2. Convert Lists Into Streams
+### Assignment 13: *Working With Java 7 for Processing List of Strings*
 
-Convert both the alphabets lists and the names list into streams 3. Merge Two Streams - Using "Stream.concat(alphabets.stream(), names.stream())" create a single combined stream named opstream that contains all elements from both lists 4. Print Combined Stream Elements
-Iterate through the merged stream using forEach() - Print each element followed by a space in the same line
+**Task Description:** For given list of names, count how many names have length less than 6 using Java 7
+
+**To-Do:**
+- Set initial list of names
+- Count names with length less than 6
+- Print the count
+
+### Assignment 14: *Combining Streams in Java*
+
+**Task Description:** We need to merge two separate streams into one using Stream.concat() method. Finally, we will iterate through the combined stream and print the elements
+
+**To-Do:**
+- Create a list named alphabets containing: "A", "B", "C"
+- Create another list named names containing: "Sansa", "Jon", "Arya"
+- Convert both the alphabets lists and the names list into streams
+- By Using "Stream.concat(alphabets.stream(), names.stream())" create a single combined merged stream named opstream that contains all elements from both lists
+- Print Combined Stream Elements
+
 Example output format: A B C Sansa Jon Arya
 
-Expected Output Your program should display all elements from both lists printed in sequence, demonstrating that the two streams have been successfully combined.
+**Expected Output:** Your program should display all elements from both lists printed in sequence, demonstrating that the two streams have been successfully combined.
 
-15. Assignment: Using Java Streams to Generate a Sequence of Numbers Objective Write a Java program that demonstrate the use of the Stream API, specifically the Stream.iterate() method, along with filtering limiting and printing elements in a stream.
 
-Task Description: - You are required to create a Java program that performs the following operations using streams: 1. Generate an infinite stream of integers, starting from 1, where each subsequent number increments by 1. - Use Stream.iterate(initialValue, unaryOperator) 2. Filter the stream so that only numbers divisible by 3 are included 3. Limit hte stream to the first 6 numbers that satisfy the condition 4. Print each number using forEach
+### Assignment 15: *Using Java Streams to Generate a Sequence of Numbers*
 
-Expected Output: The program should print the first six numbers divisible by 3:
+**Objective:** Demonstrate the use of the Stream.iterate() method, along with filtering limiting and printing elements in a stream.
 
+**Task Description:** Create a Java program that performs We need to merge two separate streams into one using Stream.concat() method. Finally, we will iterate through the combined stream and print the elements
+You are required to create a Java program that generate 6 integers, starting from 1 by taking only numbers divisible by 3. 
+
+**To-Do:**
+- Using Stream.iterate(initialValue, unaryOperator) generate an infinite stream of integers, starting from 1, where each subsequent number increments by 1.
+- Filter the stream so that only numbers divisible by 3 are included
+- Limit hte stream to the first 6 numbers that satisfy the condition
+- Print each number using forEach
+
+**Expected Output:** The program should print the first six numbers divisible by 3
 3 6 9 12 15 18
 
-///////////////////////
-///////
+### Assignment 16: *Using Java Streams to Generate a Sequence of Numbers*
+
+**Objective:** Demonstrate the use of the Stream.iterate() method, along with filtering limiting and printing elements in a stream.
+
+**Task Description:** Create a Java program that performs We need to merge two separate streams into one using Stream.concat() method. Finally, we will iterate through the combined stream and print the elements
+You are required to create a Java program that generate 6 integers, starting from 1 by taking only numbers divisible by 3. 
+
+**To-Do:**
+- Using Stream.iterate(initialValue, unaryOperator) generate an infinite stream of integers, starting from 1, where each subsequent number increments by 1.
+- Filter the stream so that only numbers divisible by 3 are included
+- Limit hte stream to the first 6 numbers that satisfy the condition
+- Print each number using forEach
+
+**Expected Output:** The program should print the first six numbers divisible by 3
+3 6 9 12 15 18
+
 
 
 ### Assignment 7: *"The Game of Shadows"*
