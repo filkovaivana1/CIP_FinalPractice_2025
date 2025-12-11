@@ -1,8 +1,16 @@
-1\. Write a Java program that performs the following steps:  1. Create a
-list of integers 2. Process the list using streams:  - Convert the list
-into a stream  - Using stream compute the square of each number in the
-list  - Collect all squared values into a new list 3. Output the
-results:  - Print the list containing the squared values.
+Assignment 1: Java Stream API for processing list of integers
+Objective: Practice with basic Sream API
+
+Task Description: Using Java Streams write a Java program that calculates the square of each number in given list.
+
+To-Do:
+
+Create a list of integers
+Convert the list into a stream
+Using stream compute the square of each number in the list
+Collect all squared values into a new list
+Print the result list containing the squared values
+
 
 2\. Filtering a List of Names Using Java Streams  1. Create a list of
 names 2. Using Stream API process the list:  - Convert the list into
