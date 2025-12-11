@@ -290,7 +290,7 @@ Example output format: A B C Sansa Jon Arya
 
 **Expected Output:** The program should print a map showing how many times each name appears (E.g. {Jon=2, Ajeet=3, Steve=1})
 
-### Assignment 19: *Filtering Student Records and Storing Results in a Set Using Java Streams*
+### Assignment 20: *Filtering Student Records and Storing Results in a Set Using Java Streams*
 
 **Objective:** The purpose of this assignment is ti demonstrate how to work with Stream API, focusing on filtering student records based on a condition and storing the filtered results in a Set using Collectors.toSet()
 
@@ -304,6 +304,15 @@ Example output format: A B C Sansa Jon Arya
 - Using Stream API Filter students whose ID is greater than 20 and collect the filtered results into a Set using Collectors.toSet()
 - Iterate over the Set and print each student's ID, name and age.
 
-
 **Expected Output:** The output will display only those students whose IDs are greater than 20
 
+### Assignment 21: *Extracting Student Names Using Java Streams*
+
+**Objective:** The purpose of this assignment is to demonstrate the use of Stream API to process object data.
+
+**Task Description:** Write program that extracts only the names of students from a list of Student objects using the map() operation.
+ 
+
+### Assignment 22: * Filter Long Names Using Java Streams*
+
+**Task Description:** From given list of names, filter the names with more than 6 characters. After storing the result print the filtered list.
